@@ -2,7 +2,7 @@
 
 ![](./public/pic.jpg)
 
-> 把cookie替换成自己的，然后执行`npm run start`
+> 把`cookie`和`userId`替换成自己的，然后执行`npm run start`
 
 
 
