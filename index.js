@@ -13,6 +13,8 @@ const configuration = new Configuration({
 
   const openai = new OpenAIApi(configuration)
 
+
+
 //   2ZhCsrVH2kNdDkG
 
 const option = {
@@ -43,7 +45,7 @@ const spinner =  ora('正在加载...')
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-let cookie = "uuid_tt_dd=10_19478409240-1678601948398-380580; __bid_n=187ff88911028f08df4207; FPTOKEN=w2k9JjXf/JrRFTxg8TZ8vXcsTM0cpmmnh2lD2JKETeP9lWJGa5pf3P1Ys7ljB5i/JUpZ0zt3bBqCbKs8ARDwyXBLc1g1yF1XHUnGFrqOC8KjQJVf1BMB46eTDv74rt30A23sqXAoNuc3YH1qpH0KqkN+tFusWQhf9sOiqjQgLJR1fB4c1YdmJDck+OkucNzsP6+NEQKrWRjvAx4Q8iBQc56kgGor3UHga3w01R5OA1/jylM3TDYNe3Vf9Sn4iyv0T2AwHHemHYFzB6kxYpPNFQmX1+t5nikHiF1HuYXxi9f+w66ldcndkajP6am3zDhlzCFOqVAj6Fh8C7Y2Boyclivy0+bJzUR7deotHw9UTHe9aafWQqlqAG/fAIwP6f9XAbZUbqGASOBatm6VQoctVw==|SPB5EF2k8l8yJChtUoBVYDcwvvRk5hl2pUnWVE1SLvQ=|10|6cf30421e7a30304608013b2315c0847; log_Id_view=185; UN=weixin_52898349; p_uid=U010000; ssxmod_itna=iq+x07i=oGqYq0Ie0LRmDxgiYGOSDyi0Q07Cgm1x05xPGzDAxn40iDt==HzS7Bm0DqiL49g4eT6W7AaRIO/jfgoaD84i7DKqibDCqD1D3qDkAIDYAkDt4DTD34DYDix=DfBKyU762l4B=R/qGuDY=2D7UB/bdDCxDF+q=LDGABDi3jDGQ2/uLBDD3DmMXBFYxD03tDz4DBeudy+M=XQnd2+na7p1GKoDGWFO6VYmQ2Fnd5EMUl9LNDPn0er92svAwI0z+z77+e8EwrR7DqSD+xUYx4K7GPRGhwQNmxCDeq3g+6uyDiNGGoC0PeD=; ssxmod_itna2=iq+x07i=oGqYq0Ie0LRmDxgiYGOSDyi0Q07CgmxnI8YeeDsoeGDLnO0WHDx4kWwiiqeCDqid4PKqAReY5Wqbis5wIYBuw9teQqREToQDoFjtQD6KFNfwt4Ov1zadsQb5y4RY/C8Zuqqy43IwQwf/jLig4j0lzQ6w4Qdlfo0fze2mnTio6m03sqTVCC=S9ntRlWniyLbPrbAdwZuV9j2Hx1aHraylzwX=a+QG8RvIC67erUTh8SdpoBoIdngpqbHOX9o8a48jkKlwPVv88f8RwIouXUEETv1B+zCGCiiGlWSRP/MlsbAw75sD0yeqD3KsepwmxeOwmYK/Qpm7vvB0+7En00m0IVhPoEmx8rK3AxGXtQbsmDg7Px4qiB0e0fQAiY06KWwDRPsmhl7YW4wYGT8GY5BrQD3tGT9iKCePgnGvmvr/pl0PRm590vSrEgatiFtG0GtD961wzn5UlPLWq1Cvmnm9KQNiPfA4DQKYz27MbrmGpnrzh0zabetwtSxDFqD+ODxD; loginbox_strategy=%7B%22taskId%22%3A270%2C%22abCheckTime%22%3A1691213801550%2C%22version%22%3A%22notInDomain%22%2C%22blog-sixH-default%22%3A1691214502369%7D; UserName=weixin_52898349; UserInfo=664b5d9416414628b000bc9cabe19d67; UserToken=664b5d9416414628b000bc9cabe19d67; UserNick=linwu-hi; AU=97E; BT=1691214532026; Hm_up_6bcd52f51e9b3dce32bec4a3997715ac=%7B%22islogin%22%3A%7B%22value%22%3A%221%22%2C%22scope%22%3A1%7D%2C%22isonline%22%3A%7B%22value%22%3A%221%22%2C%22scope%22%3A1%7D%2C%22isvip%22%3A%7B%22value%22%3A%220%22%2C%22scope%22%3A1%7D%2C%22uid_%22%3A%7B%22value%22%3A%22weixin_52898349%22%2C%22scope%22%3A1%7D%7D; _ga_JJBD2VG1H7=GS1.1.1692427641.6.0.1692427644.57.0.0; _ga=GA1.2.1426312139.1691066521; _ga_7W1N0GEY1P=GS1.1.1693465683.41.0.1693465686.57.0.0; c_hasSub=true; creative_btn_mp=3; toolbar_remind_num=1; c_segment=4; Hm_lvt_6bcd52f51e9b3dce32bec4a3997715ac=1691134017,1692951409,1693541393,1693563674; dc_sid=769ab8ab93ef50a2ae9f3c0aa298f3c7; c_dl_prid=1691747290429_921553; c_dl_rid=1693566448658_745305; c_dl_fref=https://blog.csdn.net/m0_57524265/article/details/132584217; c_dl_fpage=/download/weixin_38632247/13013477; c_dl_um=distribute.pc_feed_blog_category.none-task-blog-classify_tag-1-132039740-null-null.nonecase; c_first_ref=default; write_guide_show=3; SidecHatdocDescBoxNum=true; dc_session_id=10_1693626374385.283295; c_first_page=https%3A//blog.csdn.net/A_D_H_E_R_E/article/details/132039740%3Fspm%3D1001.2100.3001.7377%26utm_medium%3Ddistribute.pc_feed_blog_category.none-task-blog-classify_tag-1-132039740-null-null.nonecase%26depth_1-utm_source%3Ddistribute.pc_feed_blog_category.none-task-blog-classify_tag-1-132039740-null-null.nonecase; c_dsid=11_1693627090406.396139; c_utm_medium=distribute.pc_feed_blog_category.none-task-blog-classify_tag-1-132039740-null-null.nonecase; creativeSetApi=1; c_pref=https%3A//blog.csdn.net/weixin_47343544%3Ftype%3Dblog; log_Id_pv=1034; log_Id_click=1035; __gads=ID=466250117635f1df-22947cc7548000d0:T=1691066680:RT=1693627575:S=ALNI_MZZPjrnzDOZmHXcrtK2D7_8bllM5w; __gpi=UID=00000c26a6cc15a0:T=1691066680:RT=1693627575:S=ALNI_MZuzTBS5c6t0inu6ydECVf9OhwHqg; FCNEC=%5B%5B%22AKsRol-RM5LTmcR9sTPuEi9YUqsz4nKoEablnuqAOxjMRugxXxCks4-9A07KvlchD_UFJQtTBJk0BApD1G2STFrqeVR4-uGBkg2IGvBodkuKlPtUUd7EJcWWI5gqB29KfoyiOiIOrgUqoy0sF41GKferLbKoznW_XQ%3D%3D%22%5D%2Cnull%2C%5B%5D%5D; c_ref=https%3A//blog.csdn.net/weixin_52898349%3Ftype%3Dsub%26spm%3D1001.2014.3001.5348; Hm_lpvt_6bcd52f51e9b3dce32bec4a3997715ac=1693627581; c_page_id=default; dc_tos=s0cber"
+let cookie = ''
 
 const username = '';
 const password = '';
@@ -208,7 +210,7 @@ const fetchListByFollow = async (username, fanId) => {
         const list = res.data.list
         const fanId = res.data.fanId // 通过列表id拿取下一列数据
         let i = 0;
-        while (!isStop&&i < list.length) {
+        while (!isStop&&i < list.length&&i<20) {
             const userId =  list[i].blogUrl.split('https://blog.csdn.net/')[1]
             if(isComment(userId)){
                 console.log(chalk.red(`已经评论过该博主了:${list[i].nickname} ${userId}`))
@@ -226,12 +228,12 @@ const fetchListByFollow = async (username, fanId) => {
             spinner.stop()
             if (articleId) {
                 // 先评论后点赞
-                await submitComment(list[i].blogUrl, articleId)
+                await submitComment(list[i].blogUrl, articleId,articleTitle)
                 spinner.start(chalk.green('正在等待点赞...'))
                 await delay(30000); // 等待半分钟
                 spinner.stop()
                 if(!isStop){
-                    await submitLike(list[i].blogUrl, articleId,articleTitle)
+                    await submitLike(list[i].blogUrl, articleId)
                 }
                 i++
             } else {
@@ -393,7 +395,7 @@ const submitLike = async (blogUrl,articleId,articleTitle) => {
 
 async function main  () {
     spinner.start(chalk.green('获取当前cookie'))
-    await getCookie();
+    // await getCookie();
     spinner.stop()
     await delay(3000)
     console.log(chalk.blue(`开启${currentDate}三连任务....`))
