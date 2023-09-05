@@ -2,7 +2,7 @@
 
 ![](./public/pic.jpg)
 
-> 把cookie替换成自己的，然后执行`npm run start`
+> 把`cookie`和`userId`替换成自己的，然后执行`npm run start`
 
 
 
@@ -13,3 +13,7 @@
 - [x] 支持断点
 - [x] 日志打印
 - [x] 支持黑名单录入
+
+## 声明
+
+> 仅限用于学习
